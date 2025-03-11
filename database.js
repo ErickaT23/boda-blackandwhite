@@ -5,13 +5,12 @@ import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebas
 
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDY0yp1f338AH1AJJ730-RnxUHHgJv0ZQE",
-  authDomain: "buenos-deseos-nathalieycarlos.firebaseapp.com",
-  databaseURL: "https://buenos-deseos-nathalieycarlos-default-rtdb.firebaseio.com/", // Asegúrate de que sea la URL correcta de la base de datos
-  projectId: "buenos-deseos-nathalieycarlos",
-  storageBucket: "buenos-deseos-nathalieycarlos.appspot.com",
-  messagingSenderId: "521381757208",
-  appId: "1:521381757208:web:8b3ab28b0c3848a822de6d"
+  apiKey: "AIzaSyAqOZQ5YFOdhL6dblHI5wIx10m6n4xt2Fg",
+  authDomain: "buenosdeseos-twodesign.firebaseapp.com",
+  projectId: "buenosdeseos-twodesign",
+  storageBucket: "buenosdeseos-twodesign.firebasestorage.app",
+  messagingSenderId: "577908051871",
+  appId: "1:577908051871:web:27fbd4e06b3d18da14b7aa"
 };
 
 // Inicializar Firebase

@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Inicializar el contador
-    const targetDate = new Date('2025-03-23T00:00:00').getTime();
+    const targetDate = new Date('2025-09-20T00:00:00').getTime();
     const countdown = setInterval(() => {
         const now = new Date().getTime();
         const distance = targetDate - now;
