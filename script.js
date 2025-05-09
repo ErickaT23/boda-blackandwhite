@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
             iconoPlayPause.classList.add("fa-play");
             iconoPlayPause.classList.remove("fa-pause");
         });
+
+        window.openEnvelopeAndPlayMusic = openEnvelopeAndPlayMusic;
+
     }
 
     // ✅ Solo un listener para el sello (corregido)
