@@ -40,11 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Agregar event listener para el sello
-    seal.addEventListener("click", function() {
-        openEnvelopeAndPlayMusic();
-    });
-
     // Función para reproducir/pausar la música y cambiar el icono
     function togglePlayPause() {
         var audio = document.getElementById("audioPlayer");
