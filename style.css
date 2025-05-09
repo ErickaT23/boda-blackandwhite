@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +18,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-style: normal;
 }
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw;
+  }
+* {
+    box-sizing: border-box;
+    max-width: 100vw;
+  }    
 .main-content {
     max-width: 1800px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto; /* Centra el contenido horizontalmente */
@@ -27,11 +37,13 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0; /* agrega esto */
+    width: auto; /* evita usar 100vw */
     height: 100vh;
     perspective: 1000px;
     z-index: 10;
-}
+    overflow-x: hidden;
+  }  
 #envelope-top, #envelope-bottom {
         position: absolute;
         width: 100%;
@@ -694,8 +706,8 @@ footer .logo img {
         font-size: 30px;
     }
     .unit {
-        width: 65px;
-        height: 65px;
+        width: 75px;
+        height: 75px;
         padding: 15px 10px 1px 10px;
         border-radius: 100px;
     }
