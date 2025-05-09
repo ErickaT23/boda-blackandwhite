@@ -17,16 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
         var envelopeBottom = document.getElementById("envelope-bottom");
         var envelope = document.getElementById("envelope");
         var invitation = document.getElementById("invitation");
-
+      
         envelopeTop.style.transform = 'translateY(-100vh)';
         envelopeBottom.style.transform = 'translateY(100vh)';
-
+      
         setTimeout(function() {
             envelope.classList.add('hidden');
             invitation.classList.remove('hidden');
         }, 1000);
-
-        // Reproducir música
+      
         audio.play().then(function() {
             iconoPlayPause.classList.remove("fa-play");
             iconoPlayPause.classList.add("fa-pause");
@@ -36,10 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
             iconoPlayPause.classList.add("fa-play");
             iconoPlayPause.classList.remove("fa-pause");
         });
-
-        window.openEnvelopeAndPlayMusic = openEnvelopeAndPlayMusic;
-
-    }
+      }
+      
+      // 👇 Esta línea es la clave:
+      window.openEnvelopeAndPlayMusic = openEnvelopeAndPlayMusic;
+      
 
     // ✅ Solo un listener para el sello (corregido)
     seal.addEventListener("click", function(event) {
