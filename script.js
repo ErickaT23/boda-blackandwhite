@@ -152,8 +152,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleWishes() {
         const wishesDiv = document.getElementById('wishes');
         wishesDiv.classList.toggle('hidden');
-        displayWishes();
-    }
+      }      
+
+      window.toggleWishes = toggleWishes;
 
 
     window.changePhoto = function(element) {
